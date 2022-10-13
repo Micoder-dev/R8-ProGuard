@@ -18,7 +18,8 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true // Removes unused codes like if, try catch etc...
+            shrinkResources true // Removes unused resources files
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
